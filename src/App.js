@@ -2,10 +2,19 @@ import "./styles.css";
 import React, { useState } from "react";
 
 export default function App() {
-  function stockQuantityHandler(event) {}
+  var [stockQuantiy, setStockQuantiy] = useState(0);
+  var [purcased, setPurcased] = useState(0);
+  var [current, setCurrent] = useState(0);
+  function stockQuantityHandler(event) {
+    setStockQuantiy(event.target.value);
+  }
 
-  function purcasePrice(event) {}
-  function currentPrice(event) {}
+  function purcasePrice(event) {
+    setPurcased(event.target.value);
+  }
+  function currentPrice(event) {
+    setCurrent(event.target.value);
+  }
   function ClickHandler() {}
   return (
     <div className="App">
@@ -16,6 +25,10 @@ export default function App() {
       <input type="number" onChange={purcasePrice} />
       <input type="number" onChange={currentPrice} />
       <button onClick={ClickHandler}>Check</button>
+
+      <h1>{stockQuantiy}</h1>
+      <h1>{purcased}</h1>
+      <h1>{current}</h1>
     </div>
   );
 }
