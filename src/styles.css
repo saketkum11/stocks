@@ -2,3 +2,35 @@
   font-family: sans-serif;
   text-align: center;
 }
+:root {
+  --primary-color: #20063b;
+  --secondary-color: white;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+input,
+label {
+  display: block;
+  margin: 0.5rem auto;
+  font-size: 19px;
+}
+input {
+  font-size: 1rem;
+  font-weight: bold;
+
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+button {
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: 1px soild white;
+  margin: 1rem;
+}
